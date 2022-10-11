@@ -1,0 +1,16 @@
+{
+  "helloWorld": "Hi, chào cậu ᰔᩚ, tớ là Flutter (>‿◠)✌  !",
+  "@helloWorld": {},
+  "appName": "Codebase Clean Architecture",
+  "@appName": {},
+  "setting": "Cài đặt",
+  "@setting": {},
+  "cancel": "Hủy",
+  "@cancel": {},
+  "ok": "Đồng ý",
+  "@ok": {},
+  "errorInternetConnection": "Vui lòng kiểm tra kết nối mạng!",
+  "@errorInternetConnection": {},
+  "retry": "Tải lại",
+  "@retry": {}
+}

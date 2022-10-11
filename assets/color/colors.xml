@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FC5B41</color>
+    <color name="onPrimary">#FFFFFF</color>
+
+    <color name="secondary">#FFF0EE</color>
+    <color name="onSecondary">#000000</color>
+
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#000000</color>
+
+    <color name="error">#F92908</color>
+    <color name="onError">#FFFFFF</color>
+
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#000000</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="onBackground">#000000</color>
+
+    <color name="accentLightColor">#daaa7b</color>
+    <color name="actionBarIconColor">#030104</color>
+    <color name="groupTitleColor">#030303</color>
+    <color name="gray_70">#EEEEEE</color>
+    <color name="gray_410">#979797</color>
+    <color name="crimson_red" type="material">#CF2A2A</color>
+    <color name="yellow_ocher" type="material material-accent">#DF9527</color>
+</resources>
