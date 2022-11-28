@@ -18,9 +18,9 @@ dependencies:
     sdk: flutter
   # DI
   get_it: ^7.2.0
-  injectable: ^1.5.3
+  injectable: ^2.0.1
   # assets management
-  flutter_gen: ^4.3.0
+  flutter_gen: ^5.1.0+1
   # state management
   flutter_bloc: ^8.0.1
   bloc: ^8.1.0
@@ -51,8 +51,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   # Data class
   # Auto generate some files
-  injectable_generator: ^1.5.4
-  flutter_gen_runner: ^4.3.0
+  injectable_generator: ^2.0.1
+  flutter_gen_runner: ^5.1.0+1
   build_runner: ^2.2.1
   json_serializable: ^6.4.0
   # Generate object

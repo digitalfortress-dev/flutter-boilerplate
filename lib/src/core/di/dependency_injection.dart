@@ -3,7 +3,10 @@ import 'package:injectable/injectable.dart';
 
 import 'dependency_injection.config.dart';
 
-GetIt getIt = GetIt.instance;
-
-@injectableInit
-Future<void> configureInjection() async => $initGetIt(getIt);
+final getIt = GetIt.instance;
+@InjectableInit(
+  initializerName: 'init',
+  preferRelativeImports: true,
+  asExtension: true,
+)
+Future<void> configureInjection() async => getIt.init();

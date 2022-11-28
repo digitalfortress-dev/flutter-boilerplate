@@ -22,7 +22,7 @@ A Flutter codebase follows the clean architecture and makes it scalable with a m
 ## Environment
 **Framework**
 - Dart: '>=2.18.0 <3.0.0'
-- Flutter: '>=3.0.0'
+- Flutter: '>=3.3.0'
 
 **iOS**
 - iOS 12+
