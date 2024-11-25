@@ -1,1 +1,0 @@
-enum RedirectType { openHomeScreen, openLoginScreen }

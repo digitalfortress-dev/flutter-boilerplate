@@ -1,7 +1,0 @@
-arb-dir: lib/res
-template-arb-file: res_en.arb
-output-localization-file: res.dart
-output-class: Resource
-output-dir: lib/gen/l10n
-synthetic-package: false
-nullable-getter: false
