@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture/src/core/config/constants.dart';
+import 'package:flutter_boilerplate/src/core/config/constants.dart';
 
 extension BuildContextX on BuildContext {
   Size get screenSize => MediaQuery.of(this).size;

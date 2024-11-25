@@ -1,9 +1,9 @@
-import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
+import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_clean_architecture/src/core/config/app_config.dart';
-import 'package:flutter_clean_architecture/src/core/di/locator.dart';
-import 'package:flutter_clean_architecture/src/core/providers/remote/interceptor/header_interceptor.dart';
+import 'package:flutter_boilerplate/src/core/config/app_config.dart';
+import 'package:flutter_boilerplate/src/core/di/locator.dart';
+import 'package:flutter_boilerplate/src/core/providers/remote/interceptor/header_interceptor.dart';
 
 class DioBuilder extends DioMixin implements Dio {
   // create basic information for request
@@ -20,9 +20,9 @@ class DioBuilder extends DioMixin implements Dio {
     options = BaseOptions(
       baseUrl: locator<AppConfig>().baseUrl,
       contentType: contentType,
-      connectTimeout: connectionTimeOutMls,
-      receiveTimeout: readTimeOutMls,
-      sendTimeout: writeTimeOutMls,
+      connectTimeout: Duration(milliseconds: connectionTimeOutMls),
+      receiveTimeout: Duration(milliseconds: readTimeOutMls),
+      sendTimeout: Duration(milliseconds: writeTimeOutMls),
     );
 
     this.options = options;
@@ -35,7 +35,7 @@ class DioBuilder extends DioMixin implements Dio {
     interceptors.add(HeaderInterceptor());
 
     // create default http client
-    httpClientAdapter = DefaultHttpClientAdapter();
+    httpClientAdapter = IOHttpClientAdapter();
     // If you want run for web, please use httpClientAdapter from BrowserHttpClientAdapter
     // if (kIsWeb) {
     //   httpClientAdapter = BrowserHttpClientAdapter();

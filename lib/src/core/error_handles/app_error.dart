@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter_clean_architecture/src/core/models/models.dart';
+import 'package:flutter_boilerplate/src/core/models/models.dart';
 
 enum AppErrorType {
   network,
@@ -32,19 +32,19 @@ class AppError implements Equatable {
     int? headerCode;
     List<ErrorDataModel>? errors;
 
-    if (error is DioError) {
-      message = error.message;
+    if (error is DioException) {
+      message = error.message ?? "Unexpected Error";
       headerCode = error.response?.statusCode ?? -1;
 
       switch (error.type) {
-        case DioErrorType.connectTimeout:
-        case DioErrorType.receiveTimeout:
+        case DioExceptionType.connectionTimeout:
+        case DioExceptionType.receiveTimeout:
           type = AppErrorType.timeout;
           break;
-        case DioErrorType.sendTimeout:
+        case DioExceptionType.sendTimeout:
           type = AppErrorType.network;
           break;
-        case DioErrorType.response:
+        case DioExceptionType.badResponse:
           switch (error.response?.statusCode) {
             case HttpStatus.unauthorized: // 401
               type = AppErrorType.unauthorized;
@@ -64,11 +64,11 @@ class AppError implements Equatable {
               break;
           }
           break;
-        case DioErrorType.cancel:
+        case DioExceptionType.cancel:
           type = AppErrorType.cancel;
           break;
 
-        case DioErrorType.other:
+        case DioExceptionType.unknown:
         default:
           if (error.error is SocketException) {
             // SocketException: Failed host lookup: '***'

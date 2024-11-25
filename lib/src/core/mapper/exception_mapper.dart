@@ -1,14 +1,14 @@
-import 'package:flutter_clean_architecture/src/core/base/base_exception_mapper.dart';
-import 'package:flutter_clean_architecture/src/core/error_handles/app_error.dart';
-import 'package:flutter_clean_architecture/src/core/error_handles/base_exception.dart';
-import 'package:flutter_clean_architecture/src/core/error_handles/inline_exception.dart';
-import 'package:flutter_clean_architecture/src/core/error_handles/on_page_exception.dart';
-import 'package:flutter_clean_architecture/src/core/error_handles/redirect_exception.dart';
-import 'package:flutter_clean_architecture/src/core/error_handles/toast_exception.dart';
-import 'package:flutter_clean_architecture/src/core/mapper/resource_mapper.dart';
-import 'package:flutter_clean_architecture/src/core/models/models.dart';
-import 'package:flutter_clean_architecture/src/core/models/tag.dart';
-import 'package:flutter_clean_architecture/src/core/types/redirect_type.dart';
+import 'package:flutter_boilerplate/src/core/base/base_exception_mapper.dart';
+import 'package:flutter_boilerplate/src/core/error_handles/app_error.dart';
+import 'package:flutter_boilerplate/src/core/error_handles/base_exception.dart';
+import 'package:flutter_boilerplate/src/core/error_handles/inline_exception.dart';
+import 'package:flutter_boilerplate/src/core/error_handles/on_page_exception.dart';
+import 'package:flutter_boilerplate/src/core/error_handles/redirect_exception.dart';
+import 'package:flutter_boilerplate/src/core/error_handles/toast_exception.dart';
+import 'package:flutter_boilerplate/src/core/mapper/resource_mapper.dart';
+import 'package:flutter_boilerplate/src/core/models/models.dart';
+import 'package:flutter_boilerplate/src/core/models/tag.dart';
+import 'package:flutter_boilerplate/src/core/types/redirect_type.dart';
 
 //TODO: Should use it in Implement of RepositoryIml(in Data)
 class ExceptionMapper extends BaseExceptionMapper<AppError, BaseException> {

@@ -12,7 +12,7 @@ ErrorDataModel _$ErrorDataModelFromJson(Map<String, dynamic> json) =>
       json,
       ($checkedConvert) {
         final val = ErrorDataModel(
-          errorCode: $checkedConvert('errorCode', (v) => v as int?),
+          errorCode: $checkedConvert('errorCode', (v) => (v as num?)?.toInt()),
           message: $checkedConvert('message', (v) => v as String?),
         );
         return val;

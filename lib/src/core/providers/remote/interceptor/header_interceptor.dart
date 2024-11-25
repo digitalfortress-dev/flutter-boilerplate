@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_clean_architecture/src/core/providers/local/app_storage.dart';
+import 'package:flutter_boilerplate/src/core/providers/local/app_storage.dart';
 
 class HeaderInterceptor extends InterceptorsWrapper {
   final String authHeaderKey = 'Authorization';

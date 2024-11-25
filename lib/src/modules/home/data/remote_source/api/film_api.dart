@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_clean_architecture/src/modules/home/data/models/film_model.dart';
+import 'package:flutter_boilerplate/src/modules/home/data/models/film_model.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'film_api.g.dart';

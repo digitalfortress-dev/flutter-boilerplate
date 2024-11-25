@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture/gen/colors.gen.dart';
-import 'package:flutter_clean_architecture/src/modules/common_widgets/avatar_circle.dart';
+import 'package:flutter_boilerplate/gen/colors.gen.dart';
+import 'package:flutter_boilerplate/src/modules/common_widgets/avatar_circle.dart';
 
 class AvatarCircleEdit extends StatelessWidget {
   const AvatarCircleEdit(

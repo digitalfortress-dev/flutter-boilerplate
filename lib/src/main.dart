@@ -4,7 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_clean_architecture/src/modules/app/app.dart';
+import 'package:flutter_boilerplate/src/modules/app/app.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import 'core/di/dependency_injection.dart';

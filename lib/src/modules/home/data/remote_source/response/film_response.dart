@@ -1,4 +1,4 @@
-import 'package:flutter_clean_architecture/src/modules/home/data/models/film_model.dart';
+import 'package:flutter_boilerplate/src/modules/home/data/models/film_model.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'film_response.g.dart';

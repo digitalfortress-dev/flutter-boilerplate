@@ -1,6 +1,6 @@
-import 'package:flutter_clean_architecture/src/core/usecase.dart';
-import 'package:flutter_clean_architecture/src/modules/home/domain/entities/film_entity.dart';
-import 'package:flutter_clean_architecture/src/modules/home/domain/repositories/film_repository.dart';
+import 'package:flutter_boilerplate/src/core/usecase.dart';
+import 'package:flutter_boilerplate/src/modules/home/domain/entities/film_entity.dart';
+import 'package:flutter_boilerplate/src/modules/home/domain/repositories/film_repository.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable

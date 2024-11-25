@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture/src/core/utils/app_size.dart';
+import 'package:flutter_boilerplate/src/core/utils/app_size.dart';
 
 enum PopupType {
   suggestAccept,
@@ -93,12 +93,12 @@ class _ButtonOption extends StatelessWidget {
   final String? titleActionOk;
   final String? titleActionCancel;
   const _ButtonOption({
-    Key? key,
+    super.key,
     @required this.padding,
     this.onDone,
     this.titleActionOk,
     this.titleActionCancel,
-  }) : super(key: key);
+  });
 
   final double? padding;
 
@@ -172,9 +172,9 @@ class _ButtonOption extends StatelessWidget {
 
 class _DesciptionRequest extends StatelessWidget {
   const _DesciptionRequest({
-    Key? key,
+    super.key,
     @required this.desciption,
-  }) : super(key: key);
+  });
 
   final String? desciption;
 
@@ -193,9 +193,9 @@ class _DesciptionRequest extends StatelessWidget {
 
 class _TitleRequest extends StatelessWidget {
   const _TitleRequest({
-    Key? key,
+    super.key,
     @required this.title,
-  }) : super(key: key);
+  });
 
   final String? title;
 
@@ -217,9 +217,9 @@ class _ButtonOK extends StatelessWidget {
   final Function? onDone;
 
   const _ButtonOK({
-    Key? key,
+    super.key,
     this.onDone,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     return Container(

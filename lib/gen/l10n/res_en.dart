@@ -1,5 +1,7 @@
 import 'res.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for English (`en`).
 class ResourceEn extends Resource {
   ResourceEn([String locale = 'en']) : super(locale);

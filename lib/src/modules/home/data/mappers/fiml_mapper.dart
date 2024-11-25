@@ -1,6 +1,6 @@
-import 'package:flutter_clean_architecture/src/core/base/model_item_mapper.dart';
-import 'package:flutter_clean_architecture/src/modules/home/data/models/models.dart';
-import 'package:flutter_clean_architecture/src/modules/home/domain/entities/film_entity.dart';
+import 'package:flutter_boilerplate/src/core/base/model_item_mapper.dart';
+import 'package:flutter_boilerplate/src/modules/home/data/models/models.dart';
+import 'package:flutter_boilerplate/src/modules/home/domain/entities/film_entity.dart';
 
 class FilmMapper extends ModelToEntityMapper<FilmModel, FilmEntity> {
   @override

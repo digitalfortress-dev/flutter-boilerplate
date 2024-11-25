@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture/src/core/utils/app_size.dart';
-import 'package:flutter_clean_architecture/src/modules/home/domain/entities/film_entity.dart';
+import 'package:flutter_boilerplate/src/core/utils/app_size.dart';
+import 'package:flutter_boilerplate/src/modules/home/domain/entities/film_entity.dart';
 
 class DetailFilmScreen extends StatefulWidget {
   final FilmEntity filmData;
@@ -68,7 +68,7 @@ class _DetailFilmScreenState extends State<DetailFilmScreen>
               children: [
                 Text(
                   widget.filmData.title,
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
                 RichText(
                   text: TextSpan(

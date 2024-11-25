@@ -5,7 +5,7 @@
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import
+// ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
 import 'package:flutter/widgets.dart';
 
@@ -14,6 +14,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/ic_menu.png
   AssetGenImage get icMenu => const AssetGenImage('assets/icons/ic_menu.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [icMenu];
 }
 
 class $AssetsImagesGen {
@@ -21,6 +24,9 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/defaut.png
   AssetGenImage get defaut => const AssetGenImage('assets/images/defaut.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [defaut];
 }
 
 class Assets {
@@ -31,9 +37,16 @@ class Assets {
 }
 
 class AssetGenImage {
-  const AssetGenImage(this._assetName);
+  const AssetGenImage(
+    this._assetName, {
+    this.size,
+    this.flavors = const {},
+  });
 
   final String _assetName;
+
+  final Size? size;
+  final Set<String> flavors;
 
   Image image({
     Key? key,
@@ -53,7 +66,7 @@ class AssetGenImage {
     ImageRepeat repeat = ImageRepeat.noRepeat,
     Rect? centerSlice,
     bool matchTextDirection = false,
-    bool gaplessPlayback = false,
+    bool gaplessPlayback = true,
     bool isAntiAlias = false,
     String? package,
     FilterQuality filterQuality = FilterQuality.low,
@@ -85,6 +98,17 @@ class AssetGenImage {
       filterQuality: filterQuality,
       cacheWidth: cacheWidth,
       cacheHeight: cacheHeight,
+    );
+  }
+
+  ImageProvider provider({
+    AssetBundle? bundle,
+    String? package,
+  }) {
+    return AssetImage(
+      _assetName,
+      bundle: bundle,
+      package: package,
     );
   }
 

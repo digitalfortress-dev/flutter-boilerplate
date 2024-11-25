@@ -1,5 +1,7 @@
 import 'res.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Vietnamese (`vi`).
 class ResourceVi extends Resource {
   ResourceVi([String locale = 'vi']) : super(locale);

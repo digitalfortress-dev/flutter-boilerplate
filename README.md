@@ -60,19 +60,19 @@ samples, guidance on mobile development, and a full API reference.
 - Run with Flavor (dev | stag | prod):
 
 ```bash
-    flutter run --flavor development -t lib/main.dev.dart
+    fvm flutter run --flavor development -t lib/main.dev.dart
 ```
 
 or
 
 ```bash
-    flutter run --flavor staging -t lib/main.staging.dart
+    fvm flutter run --flavor staging -t lib/main.staging.dart
 ```
 
 or
 
 ```bash
-    flutter run --flavor product -t lib/main.product.dart
+    fvm flutter run --flavor product -t lib/main.product.dart
 ```
 
 - If using the another library not build with null-safety. Please run with argument `flutter run --no-sound-null-safety`
@@ -103,8 +103,14 @@ or
 **Auto generate resource(_**.g.dart/**_.freezed.dart)**
 
 ```bash
-flutter gen-l10n
-flutter packages pub run build_runner build --delete-conflicting-outputs
+fvm flutter gen-l10n
+fvm dart run build_runner build --delete-conflicting-outputs 
+```
+
+Using this in case error with cache:
+
+```bash
+fvm dart run build_runner clean
 ```
 
 ## Project struct

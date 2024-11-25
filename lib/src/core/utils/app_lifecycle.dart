@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppLifecycleListener extends StatefulWidget {
-  const AppLifecycleListener({Key? key, required this.child}) : super(key: key);
+  const AppLifecycleListener({super.key, required this.child});
 
   final Widget child;
 
@@ -33,6 +33,8 @@ class AppLifecycle extends State<AppLifecycleListener>
       case AppLifecycleState.paused:
         break;
       case AppLifecycleState.detached:
+        break;
+      case AppLifecycleState.hidden:
         break;
     }
 

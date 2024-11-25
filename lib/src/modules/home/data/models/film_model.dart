@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_clean_architecture/src/core/base/data_model.dart';
+import 'package:flutter_boilerplate/src/core/base/data_model.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'film_model.g.dart';
@@ -28,7 +28,7 @@ class FilmModel extends Equatable with DataModel {
   @JsonKey(name: 'running_time')
   final String? runningTime;
 
-  FilmModel(
+  const FilmModel(
       {this.id,
       this.title,
       this.originalTitle,

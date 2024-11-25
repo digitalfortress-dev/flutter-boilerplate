@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_clean_architecture/src/core/utils/app_size.dart';
-import 'package:flutter_clean_architecture/src/core/utils/extensions/build_context.dart';
-import 'package:flutter_clean_architecture/src/modules/app/routes.dart';
-import 'package:flutter_clean_architecture/src/modules/home/domain/entities/film_entity.dart';
-import 'package:flutter_clean_architecture/src/modules/home/presentation/bloc/film_bloc/film_bloc.dart';
+import 'package:flutter_boilerplate/src/core/utils/app_size.dart';
+import 'package:flutter_boilerplate/src/core/utils/extensions/build_context.dart';
+import 'package:flutter_boilerplate/src/modules/app/routes.dart';
+import 'package:flutter_boilerplate/src/modules/home/domain/entities/film_entity.dart';
+import 'package:flutter_boilerplate/src/modules/home/presentation/bloc/film_bloc/film_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Text(
                 context.res().appName,
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
               Expanded(
                   child: BlocConsumer<FilmBloc, FilmState>(

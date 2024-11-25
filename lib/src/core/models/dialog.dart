@@ -1,4 +1,4 @@
-import 'package:flutter_clean_architecture/src/core/types/action.dart';
+import 'package:flutter_boilerplate/src/core/types/action.dart';
 
 class Dialogs {
   final String? title;

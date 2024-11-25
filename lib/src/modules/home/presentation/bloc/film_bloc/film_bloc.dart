@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter_clean_architecture/src/modules/home/domain/entities/film_entity.dart';
-import 'package:flutter_clean_architecture/src/modules/home/domain/usecases/film_usecases.dart';
+import 'package:flutter_boilerplate/src/modules/home/domain/entities/film_entity.dart';
+import 'package:flutter_boilerplate/src/modules/home/domain/usecases/film_usecases.dart';
 
 part 'film_event.dart';
 part 'film_state.dart';
