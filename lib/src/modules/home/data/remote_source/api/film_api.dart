@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_boilerplate/src/modules/home/data/models/film_model.dart';
+import 'package:flutter_boilerplate/src/modules/home/data/remote_source/response/film_response.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'film_api.g.dart';
@@ -8,6 +8,6 @@ part 'film_api.g.dart';
 abstract class FilmAPI {
   factory FilmAPI(Dio dioBuilder) = _FilmAPI;
 
-  @GET('/films')
-  Future<List<FilmModel>> fetchFilms();
+  @GET('/top/anime')
+  Future<FilmResponse> fetchFilms();
 }

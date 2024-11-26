@@ -1,4 +1,5 @@
 import 'package:flutter_boilerplate/src/modules/home/data/models/film_model.dart';
+import 'package:flutter_boilerplate/src/modules/home/data/models/panigation_model.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'film_response.g.dart';
@@ -11,8 +12,9 @@ class FilmResponse {
   // final int? message;
   // @JsonValue(List<FilmModel>)
   // @JsonKey(name: "", defaultValue: [])
-  final List<FilmModel>? films;
-  FilmResponse({this.films});
+  final List<FilmModel>? data;
+  final PaginationModel? pagination;
+  FilmResponse({this.pagination, this.data});
 
   factory FilmResponse.fromJson(Map<String, dynamic> json) =>
       _$FilmResponseFromJson(json);

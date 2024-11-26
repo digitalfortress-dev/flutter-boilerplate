@@ -25,14 +25,14 @@ class _Config {
   static const baseURL = 'BASE_URL';
 
   static Map<String, dynamic> devConstants = {
-    baseURL: 'https://ghibliapi.herokuapp.com',
+    baseURL: 'https://api.jikan.moe/v4',
   };
 
   static Map<String, dynamic> stagingConstants = {
-    baseURL: 'https://ghibliapi.herokuapp.com',
+    baseURL: 'https://api.jikan.moe/v4',
   };
 
   static Map<String, dynamic> prodConstants = {
-    baseURL: 'https://ghibliapi.herokuapp.com',
+    baseURL: 'https://api.jikan.moe/v4',
   };
 }

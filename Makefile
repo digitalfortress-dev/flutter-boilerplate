@@ -29,10 +29,10 @@ intl_utils: ## Generates strings with	intl_utils
 	dart pub global run intl_utils:generate
 
 build_runner: ## This command generates the files for the code generated dependencies
-	fvm dart pub run build_runner build --delete-conflicting-outputs
+	fvm dart run build_runner build --delete-conflicting-outputs
 
 build_runner_watch: ## This command generates the files for the code generated dependencies 'automatically during development' 
-	fvm dart pub run build_runner watch --delete-conflicting-outputs
+	fvm dart run build_runner watch --delete-conflicting-outputs
 
 format: ## This command formats the codebase and run import sorter
 	fvm dart format lib test

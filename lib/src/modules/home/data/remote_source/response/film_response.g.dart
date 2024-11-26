@@ -7,12 +7,17 @@ part of 'film_response.dart';
 // **************************************************************************
 
 FilmResponse _$FilmResponseFromJson(Map<String, dynamic> json) => FilmResponse(
-      films: (json['films'] as List<dynamic>?)
+      pagination: json['pagination'] == null
+          ? null
+          : PaginationModel.fromJson(
+              json['pagination'] as Map<String, dynamic>),
+      data: (json['data'] as List<dynamic>?)
           ?.map((e) => FilmModel.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$FilmResponseToJson(FilmResponse instance) =>
     <String, dynamic>{
-      'films': instance.films,
+      'data': instance.data,
+      'pagination': instance.pagination,
     };

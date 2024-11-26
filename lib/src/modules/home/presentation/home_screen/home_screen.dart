@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Image.network(
             width: AppSize.width / 4,
-            data.image,
+            data.imageUrl,
             fit: BoxFit.fill,
           ),
           Expanded(
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(data.title),
-                  Text("${data.originalTitleRomanised} (${data.originalTitle})")
+                  Text("${data.titleEnglish} (${data.titleJapanese})")
                 ],
               ),
             ),
