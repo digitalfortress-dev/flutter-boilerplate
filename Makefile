@@ -54,3 +54,12 @@ run_dev: fvm flutter run --flavor development -t lib/main.dev.dart
 run_stag: fvm flutter run --flavor staging -t lib/main.staging.dart
 
 run_prod: fvm flutter run --flavor production -t lib/main.product.dart
+
+icons_launcher: ## This command runs icons_launcher
+	fvm dart run icons_launcher:create
+
+native_splash: ## This command runs flutter_native_splash
+	fvm dart run flutter_native_splash:create
+
+dependency_validator: ## This command runs dependency_validator
+	fvm dart run dependency_validator
