@@ -15,7 +15,7 @@ analyzer:
       ".dart_tool/**",
       "**/*.g.dart",
       "**/*.freezed.dart",
-      "lib/gen/**",
+      "lib/generated/**",
       "**/*.mocks.dart",
       "lib/generated_plugin_registrant.dart"
   ]

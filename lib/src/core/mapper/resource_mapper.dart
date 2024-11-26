@@ -1,6 +1,6 @@
-import 'package:flutter_boilerplate/gen/l10n/res.dart';
-import 'package:flutter_boilerplate/gen/l10n/res_en.dart';
-import 'package:flutter_boilerplate/gen/l10n/res_vi.dart';
+import 'package:flutter_boilerplate/generated/l10n/res.dart';
+import 'package:flutter_boilerplate/generated/l10n/res_en.dart';
+import 'package:flutter_boilerplate/generated/l10n/res_vi.dart';
 
 import 'mapper.dart';
 

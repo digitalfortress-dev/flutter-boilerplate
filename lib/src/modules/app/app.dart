@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_boilerplate/gen/l10n/res.dart';
+import 'package:flutter_boilerplate/generated/l10n/res.dart';
 import 'package:flutter_boilerplate/src/core/config/constants.dart';
 import 'package:flutter_boilerplate/src/core/config/themes.dart';
 import 'package:flutter_boilerplate/src/core/di/dependency_injection.dart';

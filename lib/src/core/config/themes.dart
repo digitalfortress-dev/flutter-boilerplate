@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/gen/colors.gen.dart';
-import 'package:flutter_boilerplate/gen/fonts.gen.dart';
+import 'package:flutter_boilerplate/generated/colors.gen.dart';
+import 'package:flutter_boilerplate/generated/fonts.gen.dart';
 
 class Themes {
   Themes._();
@@ -60,7 +60,8 @@ class Themes {
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
       ),
-      textTheme: _buildTextTheme(), colorScheme: colorScheme.copyWith(background: Colors.white));
+      textTheme: _buildTextTheme(),
+      colorScheme: colorScheme.copyWith(surface: Colors.white));
 }
 
 TextTheme _buildTextTheme() {

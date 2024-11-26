@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/gen/colors.gen.dart';
+import 'package:flutter_boilerplate/generated/colors.gen.dart';
 import 'package:flutter_boilerplate/src/modules/common_widgets/avatar_circle.dart';
 
 class AvatarCircleEdit extends StatelessWidget {

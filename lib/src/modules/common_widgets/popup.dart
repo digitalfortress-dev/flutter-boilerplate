@@ -93,7 +93,6 @@ class _ButtonOption extends StatelessWidget {
   final String? titleActionOk;
   final String? titleActionCancel;
   const _ButtonOption({
-    super.key,
     @required this.padding,
     this.onDone,
     this.titleActionOk,
@@ -172,7 +171,6 @@ class _ButtonOption extends StatelessWidget {
 
 class _DesciptionRequest extends StatelessWidget {
   const _DesciptionRequest({
-    super.key,
     @required this.desciption,
   });
 
@@ -193,7 +191,6 @@ class _DesciptionRequest extends StatelessWidget {
 
 class _TitleRequest extends StatelessWidget {
   const _TitleRequest({
-    super.key,
     @required this.title,
   });
 
@@ -217,7 +214,6 @@ class _ButtonOK extends StatelessWidget {
   final Function? onDone;
 
   const _ButtonOK({
-    super.key,
     this.onDone,
   });
   @override

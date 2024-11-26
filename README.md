@@ -45,6 +45,13 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## Setup Environment
+
+```bash
+    make clean_rebuild
+    make rebuild
+```
+
 ## Run App
 
 `Please turn on your simulator or connect with your physical device before:`
@@ -60,19 +67,19 @@ samples, guidance on mobile development, and a full API reference.
 - Run with Flavor (dev | stag | prod):
 
 ```bash
-    fvm flutter run --flavor development -t lib/main.dev.dart
+    make run_dev
 ```
 
 or
 
 ```bash
-    fvm flutter run --flavor staging -t lib/main.staging.dart
+    make run_stag
 ```
 
 or
 
 ```bash
-    fvm flutter run --flavor product -t lib/main.product.dart
+    make run_prod
 ```
 
 - If using the another library not build with null-safety. Please run with argument `flutter run --no-sound-null-safety`
